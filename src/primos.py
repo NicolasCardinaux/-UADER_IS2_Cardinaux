@@ -12,7 +12,7 @@ def es_primo(numero):
         i += 6
     return True
 
-# Solicitar al usuario que ingrese los números
+# Hola Prueba
 numero1 = int(input("Ingrese el primer número: "))
 numero2 = int(input("Ingrese el segundo número: "))
 
@@ -21,3 +21,6 @@ if es_primo(numero1) and es_primo(numero2):
     print(numero1, "y", numero2, "son ambos números primos.")
 else:
     print(numero1, "y", numero2, "no son ambos números primos.")
+    print(numero1, "y", numero2, "no son ambos números primos.")
+   
+    
