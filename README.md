@@ -1,4 +1,5 @@
- ![](Nicolas Cardinaux.png)
+<img src="Nicolás Cardinaux.png" alt="Descripción de la imagen">
+
  
 
 # Repositorio Nicolas cardinaux ( Ingenieria en softawar ll)
