@@ -1,4 +1,4 @@
-<img src="Nicolas Cardinaux.png" alt="Descripción de la imagen">
+<img src="Nicolas_Cardinaux.png" alt="">
 
  
 
