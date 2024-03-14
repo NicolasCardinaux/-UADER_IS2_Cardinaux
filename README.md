@@ -10,12 +10,19 @@
 
 Este es el propósito de mi repositorio.
 
-## Sección 1
+## Sección ordenada 1
 
 1. Elemento de lista ordenada 1
 2. Elemento de lista ordenada 2
 
-## Sección 2
+   
+## Sección ordenada 2
+
+1. Elemento de lista ordenada 1
+2. Elemento de lista ordenada 2
+
+
+## Sección no ordenada 2
 
 - Elemento de lista no ordenada 1
 - Elemento de lista no ordenada 2
