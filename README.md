@@ -16,13 +16,13 @@ Este es el propósito de mi repositorio.
 2. Elemento de lista ordenada 2
 
    
-## Sección ordenada 2
-
-1. Elemento de lista ordenada 1
-2. Elemento de lista ordenada 2
-
-
 ## Sección no ordenada 2
+
+- Elemento de lista no ordenada 1
+- Elemento de lista no ordenada 2
+
+
+## Sección no ordenada 3
 
 - Elemento de lista no ordenada 1
 - Elemento de lista no ordenada 2
