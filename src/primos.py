@@ -1,9 +1,9 @@
 # Función para verificar si un número es primo
 def es_primo(numero):
-    if numero <= 1:  # Si el número es 1 o menor, no es primo
+    if numero <= 1:  # Si el número es 1 o menor, no es primo 
         return False
 
-    elif numero <= 3:  # Si el número es 2 o 3, es primo
+    elif numero <= 3:  # Si el número es 2 o 3, es primo 
         return True
     elif numero % 2 == 0 or numero % 3 == 0:  # Si es divisible por 2 o 3, no es primo
         return False
