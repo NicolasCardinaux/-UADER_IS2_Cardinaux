@@ -12,20 +12,20 @@ Este es el propósito de mi repositorio.
 
 ## Sección 1
 
-1. Elemento de lista ordenada 1
-2. Elemento de lista ordenada 2
+1. Elemento  1
+2. Elemento  2
 
    
 ## Sección  2
 
-- Elemento de lista no ordenada 1
-- Elemento de lista no ordenada 2
+- Elemento  1
+- Elemento  2
 
 
 ## Sección  3
 
-- Elemento de lista no ordenada 1
-- Elemento de lista no ordenada 2
+- Elemento 1
+- Elemento 2
 
 ## Sección 4
 https://nicolascardinaux.github.io/
