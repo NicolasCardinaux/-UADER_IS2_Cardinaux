@@ -4,12 +4,6 @@
 #* Dr.P.E.Colla (c) 2022                                                   *
 #* Creative commons                                                        *
 #*-------------------------------------------------------------------------*
-#*-------------------------------------------------------------------------*
-#* factorial.py                                                            *
-#* calcula el factorial de un número                                       *
-#* Dr.P.E.Colla (c) 2022                                                   *
-#* Creative commons                                                        *
-#*-------------------------------------------------------------------------*
 # Programa en Python para calcular el factorial de un número
 
 import sys
