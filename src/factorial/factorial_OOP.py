@@ -1,42 +1,50 @@
+import sys
+
 class Factorial:
-    def __init__(self):
-        pass
+    def __init__(self, min, max):
+        self.min = min
+        self.max = max
 
-    def factorial(self, x):
-        """Esta es una función recursiva para encontrar el factorial de un entero"""
-        if x == 1:
+    def factorial(self, num):
+        if num < 0: 
+            print("El factorial de un número negativo no existe")
+        elif num == 0: 
             return 1
-        else:
-            return x * self.factorial(x - 1)
+        else: 
+            fact = 1
+            while(num > 1): 
+                fact *= num 
+                num -= 1
+            return fact 
 
-    def run(self, min, max):
-        """Calcula el factorial para cada número en el rango min-max"""
-        for num in range(min, max + 1):
-            resultado = self.factorial(num)
-            print("El factorial de", num, "es", resultado)
+    def run(self):
+        for num in range(self.min, self.max + 1):
+            print("El factorial de",num,"es", self.factorial(num))
 
+# Comprueba si se pasó un argumento al script
+if len(sys.argv) == 1:
+   print("¡Debe informar un número o un rango de números!")
+   entrada = input("Por favor, ingrese un número o un rango de números (ej. 5, 4-8, -10, o 4-): ")
+else:
+   # Toma el argumento como un número o un rango de números
+   entrada = sys.argv[1]
 
-if __name__ == "__main__":
-    while True:
-        try:
-            # Solicitar al usuario el rango en formato correcto
-            rango = input("Ingresa el rango en formato desde-hasta (ej. 4-8, o -10 o 50-) para calcular los factoriales: ")
+# Verifica si la entrada es un solo número
+if entrada.isdigit():
+    num = int(entrada)
+    print("El factorial de",num,"es", Factorial(num, num).run())
+else:
+    # Verifica si la entrada es un rango sin límite inferior
+    if entrada.startswith('-'):
+        inicio = 1
+        fin = int(entrada[1:])
+    # Verifica si la entrada es un rango sin límite superior
+    elif entrada.endswith('-'):
+        inicio = int(entrada[:-1])
+        fin = 60
+    else:
+        # Divide la entrada en los números de inicio y fin
+        inicio, fin = map(int, entrada.split('-'))
 
-            # Obtener los extremos del rango
-            extremos = rango.split('-')
-            desde = extremos[0]
-            hasta = extremos[1]
-
-            # Si no se especifica el límite inferior, se asume 1
-            desde = int(desde) if desde != "" else 1
-
-            # Si no se especifica el límite superior, se asume 60
-            hasta = int(hasta) if hasta != "" else 60
-
-            # Crear una instancia de la clase Factorial y ejecutar el método run
-            factorial = Factorial()
-            factorial.run(desde, hasta)
-
-            break  # Salir del bucle si no hay errores
-        except (ValueError, IndexError):
-            print("Error: Ingresa el rango en el formato correcto (desde-hasta), por ejemplo, 4-8 o -10 o 50-.")
+    # Calcula el factorial de cada número en el rango
+    Factorial(inicio, fin).run()

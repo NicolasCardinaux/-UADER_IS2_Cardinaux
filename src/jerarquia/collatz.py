@@ -17,12 +17,13 @@ iteraciones = [collatz(n) for n in nums]
 
 # Imprimir una respuesta
 # for i in range(len(nums)):
-#     print(f"El número {nums[i]} tardó {iteraciones[i]} iteraciones en converger a una secuencia repetitiva.")
+#      print(f"El número {nums[i]} tardó {iteraciones[i]} iteraciones en converger a una secuencia repetitiva.")
+
 
 # Crear el gráfico
 plt.figure(figsize=(10, 6))
-plt.scatter(nums, iteraciones, s=1)
+plt.scatter(iteraciones, nums, s=1)
 plt.title('Secuencia de Collatz para números entre 1 y 10000')
-plt.xlabel('Número de inicio de la secuencia')
-plt.ylabel('Número de iteraciones para converger')
+plt.xlabel('Número de iteraciones para converger')
+plt.ylabel('Número de inicio de la secuencia')
 plt.show()
