@@ -1,6 +1,4 @@
-<img src="Nicolas_Cardinaux.png" alt="">
 
- 
 
 # Repositorio Nicolas Cardinaux (Ingeniería en Software II)
 
