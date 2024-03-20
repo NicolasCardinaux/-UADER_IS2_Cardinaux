@@ -2,32 +2,43 @@
 
  
 
-# Repositorio Nicolas cardinaux ( Ingenieria en softawar ll)
+# Repositorio Nicolas cardinaux ( Ingenieria en softawar ll) 
+Este repositorio contiene el código asociado al TP1 de IS2
 
-## Título del Nivel 2
+## Propósito
+El objetivo de este trabajo práctico es utilizar Python 3 y Pip 3 en entornos de git, aprovechando la gestión de configuración de git para llevar a cabo el desarrollo y la gestión del proyecto de manera eficiente.
 
-### Título del Nivel 3
+### Estructura
+La estructura del repositorio se presenta de la siguiente forma:
 
-Este es el propósito de mi repositorio.
+1- En la carpeta "bin" se encuentran los archivos ejecutables.
+2- La carpeta "doc" alberga la documentación del proyecto.
+3- En la carpeta "script" se encuentran los scripts de la aplicación.
+4- La carpeta "src" contiene el código fuente de la aplicación.
 
-## Sección 1
+## Instalación
 
-1. Elemento  1
-2. Elemento  2
+Para instalar y utilizar la aplicación en tu propio equipo, sigue estos pasos:
+
+-Descarga una copia de este repositorio en tu máquina local utilizando el comando de clonación.
+-Accede a la carpeta "src" dentro del repositorio.
+-Ejecuta el archivo "factorial.py" o "primos.py" para iniciar y utilizar la aplicación según sea necesario.
 
    
-## Sección  2
+## Instalación de Python
 
-- Elemento  1
-- Elemento  2
+Antes de ejecutar la aplicación, asegúrate de tener instalado Python en tu sistema. Sigue estos pasos para instalar Python:
+
+##Windows:
+-Visita el sitio web oficial de Python en https://www.python.org/downloads/.
+-Descarga la última versión de Python para Windows.
+-Ejecuta el instalador descargado y sigue las instrucciones en pantalla.
+-Durante la instalación, asegúrate de marcar la casilla "Agregar Python al PATH" para que Python sea accesible desde la línea de comandos.
+-Una vez instalado, verifica la instalación abriendo una ventana de comandos y ejecutando el comando python --version para confirmar que Python está correctamente instalado.
 
 
-## Sección  3
 
-- Elemento 1
-- Elemento 2
-
-## Sección 4
+## Recursos Externos
 https://nicolascardinaux.github.io/
 
-Para más información, visita este enlace.
+Para más información sobre Nicolas Cardinaux, visita este enlace.
