@@ -17,6 +17,7 @@ iteraciones = [collatz(n) for n in nums]
 
 # Imprimir una respuesta
 # for i in range(len(nums)):
+
 #      print(f"El número {nums[i]} tardó {iteraciones[i]} iteraciones en converger a una secuencia repetitiva.")
 
 
