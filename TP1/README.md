@@ -28,7 +28,7 @@ Para instalar y utilizar la aplicación en tu propio equipo, sigue estos pasos:
 
 Antes de ejecutar la aplicación, asegúrate de tener instalado Python en tu sistema. Sigue estos pasos para instalar Python:
 
-### Windows:
+### Windows
 
 1. Visita el sitio web oficial de Python en [https://www.python.org/downloads/](https://www.python.org/downloads/).
 2. Descarga la última versión de Python para Windows.
