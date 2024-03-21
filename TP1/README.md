@@ -9,7 +9,6 @@ Este repositorio contiene el código asociado al TP1 de IS2.
 El objetivo de este trabajo práctico es utilizar Python 3 y Pip 3 en entornos de git, aprovechando la gestión de configuración de git para llevar a cabo el desarrollo y la gestión del proyecto de manera eficiente.
 
 ## Estructura
-
 La estructura del repositorio se presenta de la siguiente forma:
 
 1. En la carpeta "bin" se encuentran los archivos ejecutables.
