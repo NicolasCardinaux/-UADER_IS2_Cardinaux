@@ -2,4 +2,6 @@
 ## En cada carpeta se reflejara un trabajo practico.
    - **Trabajo Práctico 1**
      - [TP1](https://github.com/NicolasCardinaux/-UADER_IS2_Cardinaux/tree/main/TP1) Gestión de Configuración y Python. 
+
      
+![Nicolas Cardinaux](Nicolas_Cardinaux.png)
