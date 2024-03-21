@@ -17,4 +17,5 @@ for num in range(lower, upper + 1):
                break
        else:
            # Si 'num' no es divisible por ningún número hasta 'num', entonces es primo, por lo que lo imprimimos
+           
            print(num)
