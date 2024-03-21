@@ -2,7 +2,7 @@ import sys
 
 class Factorial:
     def __init__(self, min, max):
-        # Inicializa el objeto Factorial con los valores mínimos y máximos para el cálculo.
+        # Inicializa el objeto Factorial con los valores mínimos y máximos para el cálculo
         self.min = min
         self.max = max
 
@@ -23,6 +23,7 @@ class Factorial:
             return fact
 
     def run(self):
+        
         # Método para ejecutar el cálculo del factorial para cada número en el rango dado
         for num in range(self.min, self.max + 1):
             print("El factorial de", num, "es", self.factorial(num))
