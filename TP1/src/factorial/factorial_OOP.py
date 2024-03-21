@@ -2,7 +2,7 @@ import sys
 
 class Factorial:
     def __init__(self, min, max):
-        # Inicializa el objeto Factorial con los valores mínimos y máximos para el cálculo
+        # Inicializa el objeto Factorial con los valores mínimos y máximos para el cálculo.
         self.min = min
         self.max = max
 
