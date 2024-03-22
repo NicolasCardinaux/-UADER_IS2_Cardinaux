@@ -21,3 +21,5 @@ if es_primo(numero1) and es_primo(numero2):
     print(numero1, "y", numero2, "son ambos números primos.")
 else:
     print(numero1, "y", numero2, "no son ambos números primos.")
+    print(numero1, "y", numero2, "no son ambos números primos.")
+
