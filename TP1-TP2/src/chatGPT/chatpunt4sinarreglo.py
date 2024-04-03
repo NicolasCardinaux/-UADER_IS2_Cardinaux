@@ -31,7 +31,7 @@ if args.convers:
 # Este bucle continuará hasta que el usuario ingrese 'exit' para salir de la conversación
 try:
     while True:
-        # Solicitamos una consulta al usuario
+        # Solicitamos una consulta al usuario.
         # El usuario puede ingresar una consulta, 'x' para ver y editar las consultas anteriores, o 'exit' para salir de la conversación
         userquery = input("Por favor, ingresa tu consulta (o 'x' para ver las consultas anteriores, 'exit' para salir): ")
         
