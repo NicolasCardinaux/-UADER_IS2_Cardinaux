@@ -8,7 +8,7 @@
      - [TP3](https://github.com/NicolasCardinaux/-UADER_IS2_Cardinaux/tree/main/TPs/src/TP3) Patrones de Creación.
    - **Trabajo Práctico 4**
      - [TP4](https://github.com/NicolasCardinaux/-UADER_IS2_Cardinaux/tree/main/TPs/src/TP4) Patrones Estructurales.
-     - **Trabajo Práctico 5**
+   - **Trabajo Práctico 5**
      - [TP5](https://github.com/NicolasCardinaux/-UADER_IS2_Cardinaux/tree/main/TPs/src/TP5) Patrones de Comportamiento.
 
 
