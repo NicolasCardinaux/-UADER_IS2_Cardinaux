@@ -4,7 +4,7 @@ a las preguntas de los usuarios.El programa permite interactuar
 en modo de conversación, almacenando el historial de consultas del usuario y 
 ofreciendo la posibilidad de editar consultas anteriores. 
 Además, utiliza el modelo de lenguaje GPT-3.5 de OpenAI 
-para generar respuestas basadas en el contexto de la conversación.
+para generar respuestas basadas en el contexto de la conversación
 '''
 
 
