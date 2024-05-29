@@ -14,11 +14,12 @@ class KeyExtractor(ABC):
         """Método para extraer la clave"""
 class JsonKeyExtractor(KeyExtractor):
     """Clase para la extracción de claves de un archivo JSON"""
-    _instance = None
+    _instance = None   
     def __new__(cls, *args, **kwargs):
         if not cls._instance:
             cls._instance = super().__new__(cls)
         return cls._instance
+
     def __init__(self, json_file_path, json_key="token1"):
         self.json_file_path = json_file_path
         self.json_key = json_key
@@ -45,6 +46,22 @@ class PaymentRequest:
     def __init__(self, order_number, amount):
         self.order_number = order_number
         self.amount = amount
+class PaymentIterator:
+    """Clase para iterar sobre los pagos realizados"""
+    def __init__(self, payments):
+        self._payments = payments
+        self._index = 0
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self._index < len(self._payments):
+            result = self._payments[self._index]
+            self._index += 1
+            return result
+        else:
+            raise StopIteration
 class PaymentProcessor:
     """Clase para procesar los pagos utilizando el patrón de diseño 'cadena de comando'"""
     def __init__(self, json_file_path):
@@ -57,17 +74,19 @@ class PaymentProcessor:
         self.payments = []
         self.errors = []
     def process_payment(self, payment_request):
-        """Procesa un pedido de pago"""
-        for account_name in ["token1", "token2"]:
-            if self.accounts[account_name]["balance"] >= payment_request.amount:
-                token = self.accounts[account_name]["key_extractor"].extract_key()
+        """Procesa un pedido de pago comenzando por la cuenta con más saldo"""
+        sorted_accounts = sorted(self.accounts.items(), key=lambda x: x[1]["balance"], reverse=True)
+        for account_name, account_details in sorted_accounts:
+            if account_details["balance"] >= payment_request.amount:
+                token = account_details["key_extractor"].extract_key()
                 self.payments.append((payment_request.order_number, account_name, payment_request.amount))
-                self.accounts[account_name]["balance"] -= payment_request.amount
+                account_details["balance"] -= payment_request.amount
                 return
         self.errors.append(f"Error: Ninguna cuenta tiene saldo suficiente para el pedido {payment_request.order_number}.")
     def list_payments(self):
-        """Lista todos los pagos realizados en orden cronológico"""
-        for payment in self.payments:
+        """Lista todos los pagos realizados en orden cronológico utilizando un iterador"""
+        payment_iterator = PaymentIterator(self.payments)
+        for payment in payment_iterator:
             print(f"Pedido: {payment[0]}, Token: {payment[1]}, Monto: {payment[2]}")
         for error in self.errors:
             print(error)
@@ -89,6 +108,7 @@ def main():
     for order_number in range(1, 10):
         payment_request = PaymentRequest(order_number, 500)
         payment_processor.process_payment(payment_request)
+
     payment_processor.list_payments()
     # Verificar saldo al finalizar
     any_account_has_balance = any(account["balance"] > 0 for account in payment_processor.accounts.values())
