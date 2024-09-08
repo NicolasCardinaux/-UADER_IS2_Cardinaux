@@ -12,8 +12,8 @@
      - [TP5](https://github.com/NicolasCardinaux/-UADER_IS2_Cardinaux/tree/main/TPs/src/TP5) Patrones de Comportamiento.
    - **Trabajo Práctico 6**
      - [TP6](https://github.com/NicolasCardinaux/-UADER_IS2_Cardinaux/tree/main/TPs/src/TP6) Ingeniería Reversa, Re-factoría y Re-Ingeniería.
-
-
+   - **Trabajo Práctico 6**
+     - [TP7](https://github.com/NicolasCardinaux/-UADER_IS2_Cardinaux/tree/main/TPs/src/TP7) Administración de proyectos
 
 
    
