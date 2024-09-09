@@ -86,7 +86,7 @@ def calcular_VPN_con_costo_mensual(costo_mensual, meses, tasa, valor_futuro, VPN
     VPF = valor_futuro / (1 + tasa) ** meses
     return VPF - VPI - VPN_deseado
 
-# Usamos fsolve para encontrar el costo mensual que hace que el VPN sea igual al VPN original
+# Encontrar el costo mensual que hace que el VPN sea igual al VPN original
 costo_maximo_mensual = fsolve(calcular_VPN_con_costo_mensual, x0=costo_mensual, args=(meses_extendidos, tasa_efectiva_mensual, valor_futuro, VPN_original))[0]
 
 print(f"f. El costo mensual máximo aceptable si el proyecto se extiende a 15 meses es: ${costo_maximo_mensual:.2f}")
