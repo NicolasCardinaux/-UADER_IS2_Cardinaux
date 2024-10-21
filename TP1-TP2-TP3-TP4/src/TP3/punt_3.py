@@ -27,3 +27,4 @@ opcion = input("Elija el método de entrega (mostrador, retirada por el cliente,
 comida_rapida = factory.crear_comida_rapida(opcion)
 comida_rapida.entregar()  # Imprime el método de entrega elegido por el usuario
 
+
