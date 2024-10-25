@@ -13,9 +13,11 @@
    - **Trabajo Práctico 6**
      - [TP6](https://github.com/NicolasCardinaux/-UADER_IS2_Cardinaux/tree/main/TPs/src/TP6) Ingeniería Reversa, Re-factoría y Re-Ingeniería.
    - **Trabajo Práctico 7**
-     - [TP7](https://github.com/NicolasCardinaux/-UADER_IS2_Cardinaux/tree/main/TPs/src/TP7) Administración de proyectos
+     - [TP7](https://github.com/NicolasCardinaux/-UADER_IS2_Cardinaux/tree/main/TPs/src/TP7) Administración de proyectos.
    - **Trabajo Práctico 8**
-     - [TP8](https://github.com/NicolasCardinaux/-UADER_IS2_Cardinaux/tree/main/TPs/src/TP8) Gestión de calidad
+     - [TP8](https://github.com/NicolasCardinaux/-UADER_IS2_Cardinaux/tree/main/TPs/src/TP8) Gestión de calidad.
+   - **Trabajo Práctico 9**
+     - [TP9](https://github.com/NicolasCardinaux/-UADER_IS2_Cardinaux/tree/main/TPs/src/TP9) Sistemas Embebidos.
 
 
    
