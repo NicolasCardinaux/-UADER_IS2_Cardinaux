@@ -1,4 +1,4 @@
-# Calculando el número de iteraciones del algoritmo de Collatz con validación de entrada
+
 def collatz(num):
     if not isinstance(num, int):
         raise TypeError("Debe ingresar un número entero.")
@@ -15,19 +15,19 @@ def collatz(num):
         iteraciones += 1
     return iteraciones
 
-# Función principal para recibir input y ejecutar Collatz
+
 def main():
-    while True:  # Bucle para permitir reintentos
+    while True: 
         entrada = input("Ingrese un número entero positivo: ")
         try:
-            num = int(entrada)  # Convertir entrada a número entero
+            num = int(entrada) 
             print("El número de iteraciones para %d es %d\n" % (num, collatz(num)))
-            break  # Salir del bucle si la entrada es válida
+            break  
         except ValueError:
             print("Entrada no válida. Debe ingresar un número entero positivo entre 1 y 1999.")
         except TypeError as e:
             print(e)
 
-# Ejecutar el programa
+
 if __name__ == "__main__":
     main()
