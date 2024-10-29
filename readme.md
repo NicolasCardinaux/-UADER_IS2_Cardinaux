@@ -18,6 +18,8 @@
      - [TP8](https://github.com/NicolasCardinaux/-UADER_IS2_Cardinaux/tree/main/TPs/src/TP8) Gestión de calidad.
    - **Trabajo Práctico 9**
      - [TP9](https://github.com/NicolasCardinaux/-UADER_IS2_Cardinaux/tree/main/TPs/src/TP9) Sistemas Embebidos.
+   - **Trabajo Práctico Final Integrador**
+     - [TPFI](https://github.com/NicolasCardinaux/-UADER_IS2_Cardinaux/tree/main/TPs/src/TPFI) TPFI.
 
 
    
